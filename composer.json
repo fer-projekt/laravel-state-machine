@@ -1,0 +1,38 @@
+{
+  "name": "fer-projekt/laravel-state-machine",
+  "type": "library",
+  "description": "Helpes your control your state using enums.",
+  "keywords": [
+    "laravel",
+    "enum",
+    "state-machine"
+  ],
+  "license": "MIT",
+  "require": {
+    "php": "^8.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "^7.0|^8.0",
+    "illuminate/container": "^9.0|^10.0",
+    "illuminate/support": "^9.0|^10.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "FerProjekt\\LaravelStateMachine\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "FerProjekt\\LaravelStateMachine\\Tests\\": "tests/src"
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "extra": {
+    "laravel": {
+      "providers": [
+        "FerProjekt\\LaravelStateMachine\\LaravelStateMachineServiceProvider"
+      ]
+    }
+  }
+}
