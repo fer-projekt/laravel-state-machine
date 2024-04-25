@@ -40,7 +40,7 @@ trait HasState
         });
 
         static::updating(function ($model) {
-            foreach ($model->getStateMachines() as $stateToCheck) {
+            foreach ($model->getStates() as $stateToCheck) {
                 $state = $model->getOriginal($stateToCheck);
                 
                 if (empty($state) || $state === $model->$stateToCheck) {
